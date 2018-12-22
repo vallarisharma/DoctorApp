@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.charvee.doctorapp.AddPrescription">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Writing Space"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Write precautions"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Medication"
+                android:textSize="30sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/FAB_add_medicine"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="5dp"
+                android:onClick="addNewMed"
+                android:src="@drawable/plus"
+                app:backgroundTint="@color/colorPrimary"
+                app:borderWidth="0dp"
+                app:elevation="5dp"
+                app:rippleColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="226dp"
+                android:layout_height="wrap_content"
+                android:text="Tests"
+                android:textSize="30sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/FAB_add_test"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="addNewTest"
+                android:src="@drawable/plus"
+                app:backgroundTint="@color/colorPrimary"
+                app:borderWidth="0dp"
+                app:elevation="5dp"
+                app:rippleColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Save"
+            android:id="@+id/btn_savepres"
+            android:background="@drawable/ripple_rectangle"
+            android:layout_margin="5sp"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lv_addprescription"
+        android:visibility="visible"></ListView>
+</LinearLayout>

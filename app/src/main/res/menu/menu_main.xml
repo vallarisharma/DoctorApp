@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/editadd"
+        android:id="@+id/menu_add"
+        app:showAsAction="always"
+        android:title="ADD"
+        />
+    <item
+        android:icon="@drawable/edithome1"
+        android:id="@+id/menu_home"
+        app:showAsAction="always"
+        android:title="Home"
+        />
+
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:textSize="35px"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_age"
+            android:textSize="35px"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_gender"
+            android:textSize="35px"
+
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/backg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add Patient:"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+
+                android:layout_weight="1"
+
+                android:background="@color/colorPrimary"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/et_PatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:id="@+id/et_PatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Male"
+                android:layout_marginLeft="10dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="Female"
+                android:layout_marginLeft="10dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt_addPatient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+
+                android:background="@drawable/ripple_rectangle"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/bt_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/ripple_rectangle"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
